@@ -1,8 +1,4 @@
-import { CLOSING } from "ws";
 import "./styles.css";
 
-type Test = string;
+import { cancellable } from "./problems/2715";
 
-const test: Test = "hello";
-
-console.log(test)
