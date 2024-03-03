@@ -1,6 +1,13 @@
-type JSONValue = null | boolean | number | string | JSONValue[] | { [key: string]: JSONValue };
-type Fn = (...args: JSONValue[]) => void
+type JSONValue =
+  | null
+  | boolean
+  | number
+  | string
+  | JSONValue[]
+  | { [key: string]: JSONValue };
+type Fn = (...args: JSONValue[]) => void;
 
 export const cancellable = (fn: Fn, args: JSONValue[], t: number): Function => {
-    return fn
+  const timer = setTimeout(() => fn(...args), t);
+  return () => clearTimeout(timer);
 };

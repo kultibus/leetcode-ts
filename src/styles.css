@@ -41,4 +41,6 @@ h6 {
 
 .title {
   font-size: 3rem;
+	line-height: 1.5;
+	text-align: center;
 }
