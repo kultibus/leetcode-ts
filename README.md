@@ -1,1 +1,1 @@
-# leetcode-ts
+## Practice of solving LeetCode problems using TypeScript
