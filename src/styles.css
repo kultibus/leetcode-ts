@@ -40,7 +40,17 @@ h6 {
 }
 
 .title {
-  font-size: 3rem;
+	font-size: 3rem;
+	line-height: 1.5;
+	text-align: center;
+}
+
+.kultibus-name {
+	position: absolute;
+	width: 100%;
+	color: #8C78E8;
+	font-family: "Fira Code", monospace;
+  font-size: 1.5rem;
 	line-height: 1.5;
 	text-align: center;
 }
